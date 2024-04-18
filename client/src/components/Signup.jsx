@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function Signup() {
   const [formData, setFormData] = useState({
-    username: '',
+    name: '',
     email: '',
     password: '',
     role: ''
@@ -44,14 +44,14 @@ function Signup() {
     <div className="App">
       <h1>Signup Form</h1>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="username">Username:</label><br />
-        <input type="text" id="username" name="username" value={formData.username} onChange={handleChange} required /><br />
+        <label htmlFor="username">name:</label><br />
+        <input type="text" id="name" name="name" value={formData.username} onChange={handleChange} required /><br />
         <label htmlFor="email">Email:</label><br />
         <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required /><br />
         <label htmlFor="password">Password:</label><br />
         <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} required /><br />
         <label htmlFor="role">role:</label><br />
-        <input type="role" id="role" name="role" value={formData.role} onChange={handleChange} required /><br />
+        <input type="text" id="role" name="role" value={formData.role} onChange={handleChange} required /><br />
         <button type="submit">Sign Up</button>
       </form>
     </div>
